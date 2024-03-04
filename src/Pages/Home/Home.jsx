@@ -1,5 +1,6 @@
 import Banner from "../../Components/Banner/Banner";
 import Collaboration from "../../Components/Collaboration/Collaboration";
+import Connect from "../../Components/Connect/Connect";
 import Navbar from "../../Components/Navbar/Navbar";
 import TrustedBy from "../../Components/TrustedBy/TrustedBy";
 import WorkTogether from "../../Components/WorkTogether/WorkTogether";
@@ -13,6 +14,10 @@ const Home = () => {
                 <TrustedBy />
                 <Collaboration />
                 <WorkTogether />
+                <Connect />
+                <div >
+                    <img className="mx-auto" src="https://i.ibb.co/pjFzSSp/section.png" alt="" />
+                </div>
             </div>
         </div>
     );

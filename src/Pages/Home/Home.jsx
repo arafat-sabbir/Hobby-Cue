@@ -1,5 +1,6 @@
 import Banner from "../../Components/Banner/Banner";
 import Navbar from "../../Components/Navbar/Navbar";
+import TrustedBy from "../../Components/TrustedBy/TrustedBy";
 
 const Home = () => {
     return (
@@ -7,6 +8,7 @@ const Home = () => {
             <Navbar />
             <div className="container mx-auto">
                 <Banner />
+                <TrustedBy/>
             </div>
         </div>
     );

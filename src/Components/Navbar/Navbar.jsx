@@ -1,10 +1,11 @@
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { SlGlobe } from "react-icons/sl";
+import { motion } from "framer-motion"
 
 const Navbar = () => {
     const Navlinks =
         <>
-            <ul className="flex gap-4 ml-4">
+            <ul className="flex gap-4 ml-4 text-base">
                 <li>Product</li>
                 <li>Solutions</li>
                 <li>Resources</li>
@@ -31,7 +32,7 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="text-xl">miro</a>
+                <img src="https://i.ibb.co/K5F3WVk/Vector.png" className="w-[91px] h-[32px]" alt="" />
                 <div className="">
                     {Navlinks}
                 </div>
@@ -52,11 +53,11 @@ const Navbar = () => {
                 </ul>
             </div> */}
             <div className="navbar-end">
-                <ul className="flex gap-4 mr-4">
+                <ul className="flex gap-4 mr-4 text-base">
                     <li className="flex items-center gap-1"><SlGlobe size={26} /> en</li>
                     <li>Contact Sales</li>
                     <li>Login</li></ul>
-                <a className="px-6 py-4 bg-[#4262FF] rounded-full flex items-center gap-1 text-white font-medium">Sign Up Free <HiOutlineArrowLongRight /></a>
+                <motion.button onTap={{ scale: 0.95 }} onHoverStart={{ scale: 1.5 }} className="px-6 py-4 hover:scale-105  transition duration-300 bg-background rounded-full flex items-center gap-1 text-white font-medium">Sign Up Free <HiOutlineArrowLongRight /></motion.button>
             </div>
         </div>
     );

@@ -10,7 +10,7 @@ const Collaboration = () => {
                     constraints</h1>
                 <span className="text-black bg-yellow-400 px-2 right-[30%] top-0 rotate-12 font-semibold absolute rounded-xl">Your Idea Starts Here </span>
             </div>
-            <div className='grid grid-cols-1  gap-10 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid grid-cols-1  gap-10 md:grid-cols-2 xl:grid-cols-3'>
                 {
                     descriptions.map((description, index) => <div className=' ' key={index}>
                         <h1 className='text-2xl font-bold mb-8'>{description.title}</h1>
@@ -18,7 +18,7 @@ const Collaboration = () => {
                     </div>)
                 }
             </div>
-            <motion.button onTap={{ scale: 0.95 }} onHoverStart={{ scale: 1.5 }} className="lg:px-6 lg:py-2 mx-auto mt-20 py-2 px-3 hover:scale-105  transition duration-300 bg-background rounded-full flex items-center gap-1 text-white font-medium">Sign Up Free <HiOutlineArrowLongRight /></motion.button>
+            <motion.button onTap={{ scale: 0.95 }} onHoverStart={{ scale: 1.5 }} className="xl:px-6 xl:py-2 mx-auto mt-20 py-2 px-3 hover:scale-105  transition duration-300 bg-background rounded-full flex items-center gap-1 text-white font-medium">Sign Up Free <HiOutlineArrowLongRight /></motion.button>
         </div>
     );
 };
